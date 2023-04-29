@@ -6,7 +6,7 @@ The program stores data in a plain text file, allowing it to be version controll
 Need for this program came up for me after my browser randomly lost all my bookmarks, proving itself unreliable at best. Second motivation was an to learn to code in C.
 
 # Start
-The `build.sh` script builds the program and installs it to $HOME/.local/bin. The script is set up to use clang to compile the code.
+The `build.sh` script builds the program and installs it to `$HOME/.local/bin`. The script is set up to use clang to compile the code.
 ```
 ./build.sh
 ```
