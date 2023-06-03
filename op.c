@@ -24,11 +24,11 @@ int process_add(char* data, char* alias, char* database) {
             // no alias
             if (strcmp(data, line.buffer) == 0) {
                 if (alias != NULL) {
-                    fprintf(stderr, "Data without alias exists, adding alias");
+                    fprintf(stderr, "Data '%s' without alias exists, adding alias", data);
                     goto replace;
                 }
                 // the same, skipping adding duplicate
-                fprintf(stderr, "Element already exists in %s database\n", database);
+                fprintf(stderr, "Element '%s' already exists in %s database\n", data, database);
                 goto end;
             }
         } else {
