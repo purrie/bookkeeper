@@ -38,10 +38,6 @@ int process_add(char* data, char* alias, char* database) {
             if (same_alias || same_data) {
                 fprintf(stderr, "Element exists, updating\n");
                 goto replace;
-            } else {
-                // data already exists
-                fprintf(stderr, "Element already exists in %s database\n", database);
-                goto end;
             }
         }
         line_number ++;
